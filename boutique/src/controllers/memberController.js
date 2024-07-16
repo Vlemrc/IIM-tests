@@ -2,10 +2,20 @@ const Member = require('../models/member');
 
 // Fonction de validation des membres
 const validateMember = (member) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!member.lastName || !member.firstName || !member.email || !member.password) {
         return false;
     }
-    // Ajoutez d'autres validations si nécessaire
+
+    if (!emailRegex.test(member.email)) {
+        return false;
+    }
+
+    if (member.password.length < 6) {
+        return false;
+    }
+
     return true;
 };
 

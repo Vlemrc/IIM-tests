@@ -1,8 +1,8 @@
 const request = require('supertest');
-const app = require('../src/app');
+const app = require('../../src/app');
 const mongoose = require('mongoose');
-const Order = require('../src/models/order');
-const Member = require('../src/models/member');
+const Order = require('../../src/models/order');
+const Member = require('../../src/models/member');
 
 beforeAll(async () => {
     await mongoose.connect('mongodb://localhost:27017/boutique_test', { useNewUrlParser: true, useUnifiedTopology: true });

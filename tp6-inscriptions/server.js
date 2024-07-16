@@ -43,8 +43,7 @@ users[email].fruits });
 });
 const PORT = process.env.PORT || 3000;
 const server = app.listen(PORT, () => {
- console.log(`Serveur en écoute sur http://localhost:$
-{PORT}`);
+ console.log(`Serveur en écoute sur http://localhost:${PORT}`);
 });
 // Méthode pour fermer le serveur
 const closeServer = () => {
