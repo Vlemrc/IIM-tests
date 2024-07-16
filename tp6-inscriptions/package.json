@@ -1,0 +1,20 @@
+{
+  "name": "tp6-inscriptions",
+  "version": "1.0.0",
+  "main": "seleniumTest.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "jest": "^29.7.0",
+    "selenium-webdriver": "^4.22.0",
+    "supertest": "^7.0.0"
+  }
+}
